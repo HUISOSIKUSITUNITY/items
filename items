@@ -220,6 +220,12 @@ local module = {
             Price = math.huge;
             Rarity = "Legendary"
         };
+        ["Cryogenic Crystal"] = {
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Unusual";
+            Unpurchasable = true
+        };
         ["Cuddly Cat"] = {
             CustomDescription = "[Black Market Exclusive]";
             OnlyBuyOne = true;
@@ -294,11 +300,9 @@ local module = {
             Rarity = "Limited"
         };
         ["Essence of Starfrost"] = {
-            OnlyBuyOne = true;
             Rarity = "Limited"
         };
         ["Essence of Winter"] = {
-            OnlyBuyOne = true;
             Rarity = "Limited"
         };
         ["Eternal Fuel"] = {
@@ -787,6 +791,10 @@ local module = {
             Price = math.huge;
             Rarity = "Limited"
         };
+        ["Reinforced Crab Cage"] = {
+            Price = 1000;
+            Rarity = "Rare"
+        };
         Ribbon = {
             MaxCount = 3;
             NonPersistent = true;
@@ -980,6 +988,11 @@ local module = {
             Price = 2000;
             Rarity = "Rare"
         };
+        ["Sunstone Present"] = {
+            Price = math.huge;
+            Rarity = "Limited";
+            Unpurchasable = true
+        };
         ["Super Flippers"] = {
             Icon = "rbxassetid://77150830165801";
             OnlyBuyOne = true;
@@ -1170,6 +1183,11 @@ local module = {
             Price = 2000;
             Rarity = "Rare"
         };
+        ["Winter Boots"] = {
+            Icon = "rbxassetid://125820626395484";
+            OnlyBuyOne = true;
+            Rarity = "Legendary"
+        };
         ["Winter Cloak"] = {
             Icon = "rbxassetid://126260764220918";
             OnlyBuyOne = true;
@@ -1257,8 +1275,8 @@ local module = {
     };
 
     -- Системные поля
-    ToHex = "function: 0x15c17e78160ff818";
-    ToInteger = "function: 0x8cab1c43f12345f8";
+    ToHex = "function: 0xda97582c28d78e05";
+    ToInteger = "function: 0x6f81b41cd637eda5";
 }
 
 return module
