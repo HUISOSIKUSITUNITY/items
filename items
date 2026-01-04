@@ -52,6 +52,13 @@ local module = {
             Rarity = "Mythical";
             Unpurchasable = true
         };
+        ["Astronomical Fretboard"] = {
+            CustomDescription = "To play into the void";
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Secret";
+            Unpurchasable = true
+        };
         ["Atomic Nuke"] = {
             Price = math.huge;
             Rarity = "Nuclear"
@@ -188,6 +195,11 @@ local module = {
             Rarity = "Unusual";
             Unpurchasable = true
         };
+        ["Colossal Dragon Hunt Totem"] = {
+            Icon = "rbxassetid://85067071133552";
+            Price = math.huge;
+            Rarity = "Unique"
+        };
         ["Conception Conch"] = {
             Price = 444;
             Rarity = "Rare"
@@ -247,15 +259,15 @@ local module = {
             Price = 1000000;
             Rarity = "Limited"
         };
-        ["Dead Man's Heart"] = {
-            Price = math.huge;
-            Rarity = "Legendary"
-        };
         ["Dead Man's Tentacle"] = {
             Price = math.huge;
             Rarity = "Legendary"
         };
         ["Dead Man's Treasure"] = {
+            Price = math.huge;
+            Rarity = "Legendary"
+        };
+        ["Dead Man's Wood"] = {
             Price = math.huge;
             Rarity = "Legendary"
         };
@@ -279,6 +291,7 @@ local module = {
             Rarity = "Mythical"
         };
         ["Eldran's Amulet Fragment"] = {
+            OnlyBuyOne = true;
             Price = math.huge;
             Rarity = "Legendary";
             Unpurchasable = true
@@ -357,6 +370,7 @@ local module = {
             Unpurchasable = true
         };
         ["Frightful Mirror"] = {
+            NonPersistent = true;
             Price = math.huge;
             Rarity = "Limited";
             Unpurchasable = true
@@ -477,6 +491,13 @@ local module = {
             Rarity = "Special";
             Unpurchasable = true
         };
+        ["Hot Chocolate"] = {
+            CustomDescription = "[Black Market Exclusive]";
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Special";
+            Unpurchasable = true
+        };
         ["Hourglass Hull"] = {
             Price = math.huge;
             Rarity = "Mythical";
@@ -520,6 +541,7 @@ local module = {
             Rarity = "Limited"
         };
         ["Kareth's Amulet Fragment"] = {
+            OnlyBuyOne = true;
             Price = math.huge;
             Rarity = "Legendary";
             Unpurchasable = true
@@ -592,11 +614,13 @@ local module = {
             Rarity = "Legendary"
         };
         ["Maelira's Amulet Fragment"] = {
+            OnlyBuyOne = true;
             Price = math.huge;
             Rarity = "Legendary";
             Unpurchasable = true
         };
         ["Magic Conch"] = {
+            NonPersistent = true;
             Price = math.huge;
             Rarity = "Limited"
         };
@@ -707,6 +731,14 @@ local module = {
             Rarity = "Mythical";
             Unpurchasable = true
         };
+        ["New Years Firework"] = {
+            Price = 2026;
+            Rarity = "Limited"
+        };
+        ["New Years Firework Rocket"] = {
+            Price = 202600;
+            Rarity = "Limited"
+        };
         Nuke = {
             Price = math.huge;
             Rarity = "Nuclear"
@@ -738,6 +770,13 @@ local module = {
             Rarity = "Rare"
         };
         Pizza = {
+            CustomDescription = "[Black Market Exclusive]";
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Special";
+            Unpurchasable = true
+        };
+        ["Pogo Stick"] = {
             CustomDescription = "[Black Market Exclusive]";
             OnlyBuyOne = true;
             Price = math.huge;
@@ -785,6 +824,13 @@ local module = {
         ["Red Frightful Skull"] = {
             Price = math.huge;
             Rarity = "Limited";
+            Unpurchasable = true
+        };
+        ["Regeneration Coil"] = {
+            CustomDescription = "[Black Market Exclusive]";
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Special";
             Unpurchasable = true
         };
         ["Regular Token"] = {
@@ -943,6 +989,13 @@ local module = {
             OnlyBuyOne = true;
             Rarity = "Limited"
         };
+        ["Snowy Gravity Coil"] = {
+            CustomDescription = "[Black Market Exclusive]";
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Special";
+            Unpurchasable = true
+        };
         ["Someone's Present"] = {
             MaxCount = 20;
             QuestLink = "Fischmas25_Santa_PresentDelivery";
@@ -974,6 +1027,13 @@ local module = {
             QuestLink = "Fischmas25_Elf_Stockings";
             Rarity = "Limited"
         };
+        ["Strong Steampunk Glove"] = {
+            CustomDescription = "MOVEEEEEE";
+            DEV = true;
+            Price = math.huge;
+            Rarity = "Special";
+            Unpurchasable = true
+        };
         ["Submarine Top"] = {
             Price = math.huge;
             Rarity = "Rare"
@@ -1000,6 +1060,7 @@ local module = {
             Rarity = "Legendary"
         };
         ["Sythra's Amulet Fragment"] = {
+            OnlyBuyOne = true;
             Price = math.huge;
             Rarity = "Legendary";
             Unpurchasable = true
@@ -1098,12 +1159,20 @@ local module = {
             Rarity = "Unusual";
             Unpurchasable = true
         };
+        ["Twilight Pegs"] = {
+            CustomDescription = "To tune what's lost";
+            OnlyBuyOne = true;
+            Price = math.huge;
+            Rarity = "Secret";
+            Unpurchasable = true
+        };
         ["Ugly Sweater"] = {
             Icon = "rbxassetid://80420220076376";
             OnlyBuyOne = true;
             Rarity = "Limited"
         };
         ["Varn's Amulet Fragment"] = {
+            OnlyBuyOne = true;
             Price = math.huge;
             Rarity = "Legendary";
             Unpurchasable = true
@@ -1275,8 +1344,8 @@ local module = {
     };
 
     -- Системные поля
-    ToHex = "function: 0xda97582c28d78e05";
-    ToInteger = "function: 0x6f81b41cd637eda5";
+    ToHex = "function: 0x2b4bd0e677df1a2d";
+    ToInteger = "function: 0xa6b9afcbf6c2c98d";
 }
 
 return module
